@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/07/2020 Gustavo P</title>
+    <link rel="stylesheet" href="css/CSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="http://sc.senai.br/">Senai</a></li>
+                <li><a href="#portfolio">Codigo</a></li>
+                <li><a href="#contato">Links</a></li>
+            </ul>
+        </nav>
+        <div class="titulo">
+            <h1 class="site-title">Atividade</h1>
+            <h2 class="site-subtitle">24/07/2020</h2>
+            <h2 class="site-subtitle">Gustavo P</h2>
+        </div>
+    </header>
+    <section class="portfolio" id="portfolio">
+        <center>
+            <h2 class="efeitoH2">Codigo</h2>
+        </center><br>
+        <div class="Tabela">
+            <div class="container">
+                <a class="links" id="paracadastro"></a>
+                <a class="links" id="paralogin"></a>
+
+                <div class="content">
+                    <div id="login">
+
+                        <a href="#paracadastro">Cadastre-se</a>
+                        </p>
+                        </form>
+                    </div>
+
+
+                    <div id="cadastro">
+                        <form method="post" action="">
+                            <h1>Cadastro</h1>
+                            <p>
+                                <label for="nome_cad">Seu nome</label>
+                                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome" />
+                            </p>
+                            <p>
+                                <label for="id_cad">Sua Idade</label>
+                                <input id="id_cad" name="id_cad" required="required" type="text" placeholder="idade" />
+                            </p>
+
+                            <p>
+                                <label for="cpf_cad">Seu CPF</label>
+                                <input id="cpf_cad" name="cpf_cad" required="required" type="text" placeholder="CPF" />
+                            </p>
+
+                            <p>
+                                <input type="submit" value="Cadastrar" />
+                            </p>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h6>"Quando um homem aprende a amar, ele tem que suportar o risco do ódio."~Madara Uchiha</h6>
+        <br>
+    </section>
+    <section class="contato" id="contato">
+        <center>
+            <h2>Links</h2>
+            <br>
+            <div class="grid icons">
+                <center>
+                    <a target="_blank" href="https://www.alura.com.br/formacao-html-e-css">
+                        <i class="fab fa-html5"></i>
+                    </a>
+                    <a target="_blank" href="https://www.alura.com.br/formacao-html-e-css">
+                        <i class="fab fa-css3-alt"></i>
+                    </a>
+                    <a target="_blank" href="https://www.alura.com.br/formacao-react-js">
+                        <i class="fab fa-js-square"></i>
+                    </a>
+                    <a target="_blank" href="https://open.spotify.com/playlist/4d9LZavckw8CAeruEIC6l6?si=UsN7IB96Sz6jGaMZlUTKKw">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </center>
+            </div>
+            <br>
+    </section>
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            });
+        }
+        const titulo = document.querySelector(' h6');
+        typeWriter(titulo);
+    </script>
+</body>
+
+</html>
